@@ -1,0 +1,555 @@
+= Introduction to Edge Computing =
+
+Edge computing was developed to address the challenges of cloud computing, such as slow response times, security risks, and the overwhelming data traffic caused by the increasing number of internet-connected smart devices. By processing data closer to its source instead of relying on distant cloud servers, edge computing ensures faster and more efficient performance.
+
+
+
+With the rise of the Internet of Things (IoT) in the early 2000s, experts predicted that by 2019, a significant share of IoT data would be processed at the edge rather than in centralized cloud data centers. This shift was driven by the need for rapid responses in applications like self-driving cars and smart cities, where even minor delays could have serious consequences. 
+
+Unlike traditional cloud computing, edge computing enhances security, reduces latency, and processes data locally, relieving pressure on the internet while improving overall efficiency. As technology continues to evolve, edge computing plays a crucial role in enabling faster, safer, and more reliable digital experiences.
+
+== 1.1 What is Edge Computing? ==
+
+Edge computing is a way of processing data closer to where it’s created like phones, sensors, or machines instead of sending it all the way to a distant cloud or data center. By processing data nearby, it reduces delay, cuts down on internet usage, and enables faster, real-time responses. This is especially helpful for technologies like self-driving cars, smart homes, and automated systems.
+While cloud computing manages data at a central location, edge computing brings the power of computing closer to the source, making it quicker and more efficient for local tasks.
+
+=== 1.1.1 Importance ===
+
+Businesses use edge computing to make their devices respond faster and to get quick, valuable insights from data collected on-site. It helps process information in real-time, even in places where cloud connections are slow or unavailable, and prevents networks from getting overloaded with too much data.
+
+Without edge computing, companies could face higher IT costs, slow systems, and even risks to worker safety in industries like healthcare or manufacturing. By analyzing data right where it’s generated, companies can make better decisions, improve safety, boost performance, and offer smoother experiences for users.
+
+Edge computing is already powering critical systems in places like hospitals and factories. It helps businesses act faster, automate more processes, and build smarter environments. This opens up chances to launch new products quicker, improve customer experiences, and create new ways to earn revenue.
+
+=== 1.1.2 Working ===
+
+Edge computing makes apps and smart devices faster and more efficient by processing data closer to where it’s generated — like on the device itself or a nearby local server — instead of relying only on faraway cloud servers.
+
+
+'''Step 1:''' Data Is Generated at the Edge
+
+Devices such as sensors, smartphones, cameras, and machines constantly produce data — like temperature, motion, or video footage.
+
+'''Step 2:''' Local processing at the Edge
+
+Rather than sending everything to the cloud, edge computing allows that data to be filtered and analyzed locally, right where it’s created — often on the device or a nearby mini server.
+
+'''Step 3:''' Only Important Data Is Sent to the Cloud
+
+* Routine Data: GPS location updates while driving in a straight line are handled locally within the car and don’t need to be sent out.
+
+* Urgent Data: If the car detects an obstacle, makes a sudden brake, or is involved in a collision, that information is instantly sent to the cloud or a monitoring system for immediate action.
+
+* Summary Data: Information like completed routes, driving patterns, and system performance is collected and sent periodically to the manufacturer or service provider for analysis and maintenance planning.
+
+=== 1.1.3 Two Main Uses of Edge Computing: ===
+
+==== Upstream Applications (Devices > Cloud) ====
+Upstream applications in edge computing are focused on collecting and filtering data at or near the source before transmitting only relevant or necessary information to the cloud. This approach helps minimize network load and enables faster decision-making at the edge.
+
+'''Examples include:'''
+* Sensors in the field track soil moisture, temperature, and crop conditions. Instead of sending all the data, only important changes — like a sudden drop in moisture are sent to the cloud to trigger irrigation systems.
+* Trains are equipped with sensors that detect issues such as mechanical faults or abnormal vibrations. The data is analyzed on the train itself, and only important alerts or maintenance requirements are sent to the central system.
+
+==== Downstream Applications (Cloud > Users) ====
+Downstream applications aim to deliver data from the cloud to users with minimal delay by using edge servers to bring content or services closer to the user’s location. This setup improves response times and overall user experience.
+
+'''Examples include:'''
+* Game servers use edge locations to store and deliver game data closer to the players. This setup minimizes delay and improves the performance of fast-paced online games.
+* Streaming platforms like Netflix and YouTube use content delivery networks (CDNs) to store frequently watched videos on servers near the users, ensuring smoother playback and reduced buffering.
+
+== 1.2 Why we need Edge Computing? ==
+
+=== 1.2.1 The Need for Edge Computing ===
+
+The exponential growth of data generated by IoT devices, autonomous systems, and real-time applications has placed significant strain on traditional cloud computing architectures. Edge computing emerges as a solution to process data closer to its source, reducing latency, improving efficiency, and enhancing security. This paper explores the necessity of edge computing by analyzing its benefits, key applications, and challenges.
+
+
+
+==== Latency Reduction and Real-Time Processing ====
+
+One of the primary drivers for edge computing is the need for real-time data processing. Applications such as autonomous vehicles, healthcare monitoring, and industrial automation require immediate responses, which centralized cloud computing fails to provide due to network latency. By processing data at the edge, delays are minimized, ensuring faster decision-making.
+
+==== Bandwidth Optimization ====
+With billions of IoT devices transmitting data, traditional cloud systems face bottlenecks in network bandwidth. Edge computing mitigates this by processing essential data locally and only sending relevant insights to the cloud, reducing overall bandwidth consumption.
+
+==== Enhanced Security and Privacy ====
+Data transmitted over the cloud is susceptible to breaches. Edge computing reduces exposure by keeping sensitive data closer to the source, thereby lowering the risk of cyberthreats. This is particularly important in healthcare and financial sectors, where data privacy is crucial.
+
+==== Scalability and Cost Efficiency ====
+Deploying edge computing reduces infrastructure costs by minimizing the need for high-bandwidth connectivity and extensive cloud storage. Additionally, edge nodes can be deployed dynamically based on application needs, offering a scalable solution.
+
+=== 1.2.2 Benefits ===
+While edge computing offers numerous advantages, it also presents challenges such as:
+
+* Infrastructure Complexity: Managing distributed edge nodes requires sophisticated coordination and maintenance.
+* Security Vulnerabilities: Edge devices, if not properly secured, can become points of failure.
+* Interoperability Issues: Different vendors and technologies may create integration challenges.
+* Power and Resource Constraints: Edge devices must balance performance with power consumption.
+
+Edge computing is essential for modern digital ecosystems, enabling real-time processing, bandwidth efficiency, security enhancements, and cost-effective scalability. As industries increasingly adopt edge technologies, addressing its challenges will be crucial to maximizing its potential.
+
+== 1.3 Edge Computing application Domains and Typical Applications ==
+Edge computing processes data closer to the source, reducing latency, bandwidth usage, and reliance on cloud computing. This approach is transforming various industries by enabling real-time analytics, automation, and enhanced decision-making. Below is a detailed explanation of each domain and how edge computing is applied within them.
+=== 1.3.1 Autonomous Vehicles & Transportation ===
+The transportation sector requires real-time data processing for safety, efficiency, and automation. Autonomous vehicles, smart traffic systems, and connected infrastructure rely on low-latency computing to function effectively.
+==== Platooning:==== 
+Platooning refers to a group of vehicles, typically trucks, traveling closely together in a synchronized convoy. This approach minimizes wind resistance and saves fuel. Edge computing plays a vital role here by processing sensor data from radar, cameras, and LIDAR in real-time, allowing the vehicles to maintain tight coordination. Using edge devices, the trucks communicate with each other instantly without relying on distant cloud servers. This ultra-low latency ensures synchronized braking and acceleration, significantly improving road safety and fuel efficiency.
+
+==== Smart Traffic Infrastructure: ====
+Smart traffic systems use edge-enabled devices embedded within traffic lights, intersections, and pedestrian crossings to analyze traffic flow and pedestrian movement. By processing video and sensor data locally, these systems dynamically adjust traffic signals, detect jaywalkers, or prioritize emergency vehicles. Edge computing reduces reliance on cloud networks, enabling rapid decision-making and improving road safety and traffic efficiency.
+
+===1.3.2 Industrial IoT (IIoT) & Manufacturing ===
+Factories and industrial plants increasingly integrate IoT devices for automation, quality control, and predictive maintenance. These operations require real-time decision-making to minimize downtime and optimize efficiency.
+==== Visual Quality Inspection: ====
+High-resolution cameras capture product images. Instead of uploading gigabytes of images to the cloud, edge devices run AI models to catch defects immediately—critical for high-speed production lines.
+
+==== Digital Twins: ====
+A digital twin is a real-time digital replica of a physical asset or system. In industrial settings, edge devices gather data from machines and feed it into a simulated model, which mirrors the behavior of the real-world counterpart. This enables operators to monitor performance, diagnose issues, and even simulate future scenarios on the fly. Edge computing makes these digital twins more responsive, as data is processed locally, offering real-time feedback and facilitating predictive maintenance and operational efficiency.
+
+==== Worker Safety: ====
+Industrial environments often pose risks to workers due to hazardous machinery or toxic substances. Edge computing is employed in wearable technologies like smart helmets and vests that monitor workers’ vital signs, movements, and environmental conditions such as gas levels. When abnormalities are detected, edge devices can immediately send alerts to supervisors or trigger emergency protocols. This real-time processing capability is essential for accident prevention and ensures rapid response to potential threats.
+
+=== 1.3.3 Energy & Smart Grids ===
+The energy sector is undergoing a digital transformation, integrating smart grids, renewable energy sources, and real-time energy management solutions. These systems must process large volumes of data efficiently.
+==== Smart Grids: ====
+Smart grids are modernized electrical grids that use sensors and automation to manage electricity flow efficiently. Edge computing enables local analysis of consumption patterns, detection of faults, and real-time rerouting of power in response to surges or outages. This ensures continuous service and quicker fault resolution without needing to send data to centralized servers, improving grid reliability and reducing downtime.
+
+==== Wind/Solar Farm Optimization: ====
+Renewable energy farms use edge computing to monitor and adjust operations in real-time. For instance, wind turbines can adjust blade angles based on wind speed, and solar panels can tilt to capture maximum sunlight. Edge processors handle data from environmental sensors locally, enabling these adjustments instantly. This enhances energy generation efficiency and extends equipment life by reducing mechanical strain.
+
+==== Pipeline Monitoring: ====
+Pipelines transporting oil or gas must be monitored continuously for leaks, pressure anomalies, or flow disruptions. Edge computing devices installed along pipelines process sensor data in real-time to detect these issues early. If a leak or abnormal pressure is identified, the system can shut valves or alert maintenance teams immediately. This rapid detection is critical to prevent environmental damage and financial loss.
+
+=== 1.3.4 Smart Cities & Infrastructure ===
+Smart cities integrate edge computing for efficient urban management, security, and environmental monitoring. Data is processed locally to reduce network congestion and response times.
+
+====Traffic Optimization: ====
+Edge-enabled traffic systems use vehicle counters and cameras to assess road usage and adapt signal timings accordingly. Instead of relying on pre-set light cycles, these systems dynamically respond to real-time traffic conditions, reducing congestion and travel times. Edge processing ensures decisions are made locally and instantly, avoiding delays caused by sending data to distant servers.
+
+====Crime Detection:====
+Surveillance systems in smart cities often rely on AI-powered edge devices to detect suspicious behavior or recognize faces in real-time. Cameras equipped with edge processors can analyze video feeds to identify threats such as weapons, unauthorized access, or unusual crowd behavior. Once detected, alerts are sent to security personnel instantly. This enhances public safety while reducing the need for constant human monitoring.
+
+====Waste Management: ====
+Smart bins use edge sensors to detect fill levels and optimize pickup routes.
+
+====Disaster Response: ====
+Edge computing supports real-time disaster detection and response mechanisms in smart cities. Sensors for earthquakes, floods, or fires process data locally to identify threats and trigger immediate alerts or evacuations. By avoiding delays associated with cloud communication, these systems enable faster and more effective responses, saving lives and minimizing damage.
+
+===1.3.5 Telecommunications & 5G Networks ===
+Telecommunications providers leverage edge computing to improve network performance, reduce latency, and optimize bandwidth usage. 5G networks particularly benefit from distributed processing at the edge.
+
+====Private 5G Networks: ====
+Enterprises are deploying private 5G networks to manage internal communications with high performance and low latency. Edge computing is central to these networks, allowing data processing and control to occur close to the source. This setup is ideal for industries requiring fast, secure, and reliable connectivity, such as automated factories, smart ports, or military bases
+
+====IoT Connectivity: ====
+The explosive growth of IoT devices has placed immense pressure on telecom infrastructure. Edge computing helps manage this by processing data from devices locally at the network edge, reducing the need to send everything to central servers. This not only decreases latency but also conserves bandwidth, enabling telecom operators to support billions of connected devices efficiently.
+
+=== 1.3.6  Healthcare ===
+Healthcare systems generate massive amounts of data from medical devices, imaging systems, and patient monitoring. Real-time processing is critical for quick diagnosis, treatment, and remote patient care.
+
+====Remote Patient Monitoring (RPM): ====
+Edge computing is transforming healthcare through wearable devices that track patient vitals in real-time, such as heart rate, oxygen levels, or glucose levels. These devices process data locally to detect anomalies, such as arrhythmias or sudden drops in blood sugar, and can instantly alert caregivers or medical staff. This ensures timely intervention and is especially valuable for patients with chronic conditions or those in remote locations.
+
+====AI Imaging: ====
+Medical imaging systems like CT, MRI, or ultrasound machines are increasingly equipped with edge processors that can analyze scans on-site. Instead of uploading massive image files to the cloud, edge AI models detect abnormalities such as tumors or internal bleeding in real-time. This accelerates the diagnostic process and is crucial in emergencies like strokes or trauma, where every second counts.
+
+====Smart ICUs:====
+Intensive Care Units (ICUs) house various devices monitoring a patient’s health. Edge computing integrates these devices into a unified system that delivers a consolidated, real-time view of the patient’s condition. It enables immediate alerting and coordination of devices such as ventilators and infusion pumps, helping doctors make quicker, data-informed decisions, ultimately improving patient care outcomes.
+
+== 1.4 Different Edge Computing Paradigms ==
+===1.4.1 Fog Computing ===
+Fog computing is an architecture introduced by Cisco to extend cloud services to the edge of the network. Instead of sending data from edge devices directly to the cloud, fog computing enables processing, storage, and analysis to occur closer to the data source, such as on local routers, gateways, or switches. This paradigm creates a layered system where intermediate nodes handle computations, reducing latency and bandwidth usage. It supports a decentralized model, which is ideal for real-time applications like industrial automation, smart traffic lights, and autonomous systems. Fog computing enhances scalability and responsiveness while maintaining a link to the central cloud for more intensive processing or long-term storage.
+=== 1.4.2 Mobile Edge Computing (MEC) ===
+Mobile Edge Computing, now often referred to as Multi-access Edge Computing (MEC), is designed to bring computational capabilities directly into the radio access network (RAN), especially at 4G or 5G base stations. This paradigm enables real-time data processing with ultra-low latency and high bandwidth by placing services physically close to mobile users. MEC systems can take advantage of location and context information from the mobile network, making them ideal for time-sensitive and location-aware applications such as augmented reality (AR), virtual reality (VR), real-time video analytics, and connected vehicle systems. MEC is crucial in enabling the responsiveness and scalability expected from next-generation mobile networks.
+===1.4.3 Edge Cloud ===
+The edge cloud paradigm combines traditional cloud computing with edge computing in a federated or hybrid architecture. It enables dynamic resource sharing between cloud data centers and edge infrastructure, offering the best of both worlds: centralized power and local responsiveness. Edge cloud systems support elasticity, scalability, and fault tolerance while minimizing latency. This paradigm is especially relevant for large-scale applications that require real-time responsiveness with centralized oversight, such as smart city infrastructure, telemedicine, and distributed AI models. The edge cloud facilitates efficient load balancing, allowing tasks to be executed wherever it’s most optimal based on conditions like network congestion, location, and data urgency.
+=== 1.4.4  Cloudlet Computing ===
+Cloudlet computing introduces the idea of deploying small-scale cloud data centers known as "cloudlets" at the edge of the network, typically near mobile devices. Originally proposed by Carnegie Mellon University, cloudlets act as intermediate computation nodes that are more powerful than mobile devices but closer than the cloud. They enable mobile applications to offload resource-intensive tasks such as speech recognition, facial recognition, or gaming graphics rendering. Because cloudlets are located close to end users, they offer low-latency and high-bandwidth connections, which significantly improve performance and user experience compared to relying solely on distant cloud servers.
+
+
+='''Edge Computing Architecture and Layers'''=
+==='''Introduction'''===
+Edge computing is a new model that locates computer processing near the source of data generation in an effort to restrict latency and bandwidth consumption. Edge computing is distinct from traditional cloud-based systems with centralized data centers employed for processing data in that computational power is spread across devices and local nodes within the network at the edge. The architectural change is a necessity in real-time applications with stringent high-speed data processing demands like autonomous cars, health monitoring, and industrial automation.
+
+The infrastructure of edge computing consists of various layers, and each one performs its function. At the ground level, there are edge devices like sensors and actuators that collect data and perform the initial processing. Then there is fog computing, which is an intermediate layer between various edge nodes, collects data, pre-processes, and transmits it to the cloud. The upper cloud performs the heavy computation and long-term storage of data.
+
+The confluence of IoT, mobile computing, digital twins, and cloud infrastructure creates a robust edge computing architecture. We present in this chapter the basic building blocks and layers of edge computing, such as IoT and digital twins, cloud infrastructure, fog computing, and the edge-cloud continuum.
+
+=='''2.1 IoT, Mobile, and Digital Twins'''==
+==='''Internet of Things (IoT)'''===
+
+The Internet of Things (IoT) is a network of physical objects that interact via the internet. Examples range from common consumer devices such as smart thermostats, manufacturing equipment, health wearable sensors, and pieces of urban infrastructure. IoT provides additional connectivity and automation by way of ongoing data creation and analysis.
+
+==='''Key Features of IoT:'''===
+#'''Connectivity:''' Implements protocols like Wi-Fi, Bluetooth, Zigbee, and LoRaWAN for data transmission,
+#'''Data Processing:''' Employs cloud and edge computing platforms to process the data that is gathered by sensors,
+#'''Automation:''' Employs AI-driven or rule-based systems to make decisions autonomously,
+#'''Examples:''' Smart homes, wearables in healthcare, industrial IoT (IIoT), smart cities, and connected vehicles.
+
+==='''Mobile Cloud Computing (MCC)'''===
+Mobile Cloud Computing (MCC) combines cloud computing and mobile phones to maximize processing power and storage. The system enables computation-intensive processing to be offloaded from mobile phones to cloud servers, thereby conserving battery life while improving performance.
+
+==='''Benefits of MCC:'''===
+*'''Extended Battery Life:''' Processing tasks are offloaded to the cloud, which reduces local energy consumption,
+*'''Higher Processing Power:''' Allows sophisticated applications like AI and machine learning,
+*'''Scalability:''' Dynamically adjusts with changing user loads,
+*'''Real-Time Access:''' Provides access to cloud-hosted applications from remote locations
+*'''Applications:''' Cloud-hosted AI personal assistants (like Google Assistant), cloud gaming, and AR/VR applications
+
+==='''Digital Twins'''===
+===='''What Is a Digital Twin?'''====
+A Digital Twin is a virtual replica of a physical object, system, or process that is continuously updated with real-time data. It uses sensors, connectivity, and analytics to mirror and simulate the behavior and performance of its physical counterpart. This enables organizations to monitor, diagnose, predict, and optimize operations virtually before applying changes in the real world.
+
+===='''How Digital Twins Relate to IoT'''====
+The Internet of Things (IoT) plays a foundational role in enabling Digital Twin technology. IoT devices—such as sensors, actuators, smart meters, and wearables—collect data from the physical environment and stream it into the digital twin model in real time. Here’s how the connection works:
+#'''Data Collection:''' IoT sensors gather metrics such as temperature, vibration, pressure, humidity, or motion,
+#'''Data Transmission:''' These metrics are transmitted over a network to a central system,
+#'''Real-Time Sync:''' The digital twin receives this data to update its model, reflecting the real-time status of the asset,
+#'''Insight Generation:''' Analytics, AI/ML models, and simulations applied to the digital twin enable predictive maintenance, performance tuning, and scenario testing without affecting the physical system.
+
+===='''Practical Use Cases'''====
+*'''Smart Manufacturing:''' IoT-enabled machinery is mirrored by digital twins to optimize workflows, reduce downtime, and simulate design changes,
+*'''Smart Cities:''' Digital twins of buildings, transport systems, or power grids leverage data from IoT sensors to improve efficiency and public safety,
+*'''Healthcare:''' Wearables and connected medical devices provide biometric data to patient-specific digital twins for personalized treatment simulations.
+
+===='''Benefits:'''====
+* Real-Time Monitoring,
+* Predictive Analytics & Maintenance
+* Virtual Experimentation
+* Enhanced Decision-Making
+* Enhanced Decision-Making
+
+This foundation makes it easy to later explore where digital twins should be deployed (edge vs cloud), based on '''latency, bandwidth, data sensitivity''', and '''computational demand'''.
+
+
+Digital twins are virtual representations of physical objects that are regularly updated with real-time data so as to replicate, predict, and maximize functionality. Digital twins are increasingly applied in manufacturing, healthcare, and smart city projects that enable intelligent cities, where predictive maintenance and systems optimization can be realized.
+
+Digital twins connect physical devices with virtual spaces. Digital twins are run at edge nodes in edge computing to carry out local processing of information to minimize the necessity to send colossal amounts of data to the cloud. The configuration is especially applicable in cases requiring real-time analytics, for example, industrial automation and healthcare monitoring.
+
+'''Diagram 1: Digital Twin Edge Network Architecture'''
+[[File:Intro_to_edge.png|500px|thumb|center|Real-Time Edge Adoption]]
+
+This diagram illustrates a layered architecture where virtual twins communicate with physical IoT devices through edge nodes. It showcases intelligent transportation systems, 6G networks, and IoT applications as part of a hierarchical edge-cloud framework.
+
+----
+
+==='''2.2 Cloud'''===
+
+Cloud computing is an on-demand model of ubiquitous, easy, network access to shared pools of programmable computer infrastructure such as networks, servers, storage, software applications, and services that may be rapidly de-provisioned and provisioned with little administrative effort. Cloud computing provides access to high-bandwidth computational power without the necessity of owning and maintaining physical infrastructures.
+
+===='''Why the Continuum Will Dominate the Future'''====
+
+'''1. Proximity and Real-Time Responsiveness'''
+Edge computing brings computation closer to data sources—ideal for latency-sensitive applications such as autonomous vehicles, augmented reality, and real-time video analytics. The continuum optimizes where computation occurs—at the edge, near edge, or cloud—based on performance needs.
+
+'''2. Scalability Across Diverse Infrastructures'''
+From smart homes to industrial automation to smart cities, edge devices vary widely in capabilities. The continuum provides a unified model to scale applications from small edge sensors to large cloud-hosted AI models.
+
+'''3. Flexibility and Adaptability'''
+Workloads can dynamically shift based on resource availability, cost, network conditions, or privacy constraints. For instance, video streams can be pre-processed at the edge and fully analyzed in the cloud only when needed, reducing bandwidth usage and improving efficiency.
+
+'''4. Support for Advanced Use Cases'''
+Emerging applications such as connected autonomous systems, Industry 4.0, and real-time federated learning rely on the interplay between edge and cloud. The continuum supports these by allowing AI, analytics, and orchestration tools to operate fluidly across environments.
+
+'''5. Improved Security, Privacy, and Data Sovereignty'''
+The continuum allows sensitive data to be processed locally, enforcing data residency laws and reducing exposure to breaches. Meanwhile, global-scale analytics can be performed on anonymized or aggregated data in the cloud.
+
+'''6. Optimized Resource Utilization and Cost Efficiency'''
+The continuum benefits from statistical multiplexing, allowing workloads to be scheduled and shifted to underutilized resources whether at the edge or in the cloud, enhancing overall utilization and reducing operational costs.
+
+===='''Technical Innovations:'''====
+*'''Federation Standards (e.g., IEEE 2302-2021):''' Enables trust and interoperability across diverse environments,
+*'''Zero-Trust Security Models:''' Secure workloads dynamically across distributed nodes,
+*'''Microservices and Containers:''' Allow modular, portable deployments across cloud and edge,
+*'''Orchestration Platforms (like Kubernetes and KubeEdge):''' Manage application components across the continuum.
+
+===='''Broader Impact and Vision'''====
+The edge–cloud continuum supports global digital transformation. It’s essential to sectors like '''smart healthcare, national disaster response systems, autonomous transportation, and cyber-physical systems,''' all of which need '''reliability, responsiveness, and scalability''' that neither cloud nor edge can provide alone.
+
+===='''Characteristics of Cloud Computing:'''====
+# '''On-Demand Self-Service:''' Consumers may access computing capabilities on their own without human interference from the provider,
+#'''Broad Network Access:''' The cloud services may be accessed from the network and are capable of supporting heterogeneous client platforms like laptop computers, cell phones, and workstations,
+#'''Resource Pooling:''' The computer resources of the provider are collected to provide service to multiple consumers through a multi-tenant model,
+#'''Rapid Elasticity:''' Abilities are provisioned elastically and also de-provisioned to grow quickly in response to demand,
+#'''Measured Service: ''' Resources utilization is metered, controlled, and reported, and offers visibility for the provider as well as the consumer.
+
+===='''Cloud Service Models:'''====
+* '''Infrastructure as a Service (IaaS): ''' Offers raw computing resources like virtual machines, storage, and networks. AWS EC2 and Google Compute Engine are examples,
+* '''Platform as a Service (PaaS): ''' Platform as a Service (PaaS): Offers environments in which applications can be created, tested, and run. It covers up the underlying infrastructure, focusing on application development (e.g., AWS Elastic Beanstalk, Heroku)
+* '''Software as a Service (SaaS): ''' Delivers applications over the internet on a pay-per-use basis, without the need to install or maintain software (e.g., Microsoft 365, Salesforce).
+
+===='''Deployment Models:'''====
+#'''Public Cloud:'''  Third-party suppliers manage it, offering services over the public internet. For low-security needs and high scalability,
+#'''Private Cloud:''' Dedicated for use by one organization, offering more control and security. Installed on-premises or by a third party,
+#'''Hybrid Cloud:''' Combines public and private clouds, enabling sharing of applications and data between them,
+#'''Multi-Cloud:''' Utilizes services from multiple cloud vendors to avoid vendor lock-in and enhance reliability.
+
+===='''Challenges in Cloud Computing:'''====
+*'''Latency Problems:''' Cloud processing may lead to delays, especially in real-time systems,
+*'''Privacy of Data:''' Transmission of data to the cloud can be a security risk,
+*'''Cost of Bandwidth:''' Ongoing data transfer between equipment and the cloud is costly,
+*'''Outages and Downtime:''' Interruptions in cloud services affect availability.
+
+==='''Integration of Cloud and Edge:'''===
+
+Edge computing is superior to cloud computing because it computes closer to the source and leverages the cloud for intense analytics and data storage. An example would be when in autonomous vehicles, local real-time calculation (i.e., object detection) happens while machine learning model training data are sent to the cloud.
+
+'''Diagram 2: Edge Computing Architecture'''
+[[File:Diagram_2_Edge_Computing_Architecture.png|500px|thumb|center|Real-Time Edge Adoption]]
+
+This diagram represents the layered structure of edge computing, highlighting how the cloud layer interacts with network and application edges. The cloud primarily handles heavy computation and data storage, while edge devices focus on local data processing.
+
+----
+
+=='''2.3 Edge and Fog'''==
+===='''Edge Computing:'''====
+Edge computing handles data at or close to the place where the data is situated, minimizing the latency in transmitting data to the cloud servers centrally. It is critical for applications that need real-time data processing and response, including autonomous vehicles, industrial automation, and medical monitoring​.
+
+#'''Reduced Latency:''' Edge computing reduces the latency of transmitting data over long distances as it processes the data locally.
+#'''Improved Data Privacy:''' Personal data is processed closer to the source, reducing the risk of exposure.
+#'''Bandwidth Efficiency:''' There is only transmission of processed data or key information to the cloud, which minimizes data traffic,
+#'''High Reliability:''' Edge devices can operate independently even when the network connectivity with the cloud is severed.
+===='''Applications of Edge Computing:'''====
+*''''Autonomous Vehicles:''' Real-time data processing for navigation and obstacle avoidance,
+*'''Smart Cities:''' Adaptive lighting networks and traffic monitoring,
+*'''Healthcare:''' Real-time remote monitoring equipment to analyze patients' information,
+*'''Industrial IoT:''' Predictive maintenance through sensor data.
+
+==='''Fog Computing:'''===
+Fog computing is an extension of edge computing in the way that it creates a middle layer between the cloud and the edge devices. Fog computing enables data to be collected, computed, and decision-making performed nearer to the data source but not on the device itself​.
+
+===='''Features of Fog Computing:'''====
+#'''Intermediate Processing:''' Relieves edge devices of some processing tasks prior to reaching the cloud,
+#'''Data Aggregation:''' It combines data from various sources to eliminate redundancy,
+#'''Enhanced Scalability:''' Enables massive IoT networks by distributing computation tasks
+#'''Real-Time Analytics: ''' Processes real-time data in real time without depending on distant servers
+
+===='''Comparison: Edge vs. Fog:'''====
+*'''Processing Location:''' Edge directly on devices; Fog on intermediate nodes
+*'''Latency:''' Edge has ultra-low latency; Fog has low but comparatively higher latency
+*'''Scalability:''' Fog is more scalable because of the capability of data combining
+*'''Data Aggregation:''' Edge deals with individual data, while Fog consolidates data from multiple sources.
+
+'''Diagram 3: Edge-Fog-Cloud Network Architecture'''
+
+ The diagram shows the interplay between cloud, fog, and edge layers, emphasizing the data flow from localized edge processing through fog nodes to the centralized cloud for deeper analytics​.
+
+----
+
+=='''2.4 Edge-Cloud Continuum'''==
+Edge-Cloud Continuum is defined as an adaptive and dynamic computational paradigm that balances edge, fog, and cloud computation workloads. Through this integration of environments, applications can toggle between local and remote processing depending on workload, latency constraints, and network status​.
+
+===='''Core Functions:'''====
+#'''Dynamic Workload Distribution:''' Real-time tasks are processed at the edge, while less critical operations are pushed to the cloud,
+#'''Real-Time Data Processing:''' Edge devices manage time-sensitive data, like sensor readings, without sending it to remote servers
+#'''Data Filtering and Aggregation:''' Fog nodes filter data before forwarding it to the cloud, minimizing data transfer
+#'''Scalable and Elastic Resource Management:''' Allocates resources adaptively according to the computational demand
+#'''Security and Privacy Management:''' Implements localized data encryption and access control,
+#'''Interoperability:''' Facilitates smooth interaction between edge, fog, and cloud systems through intelligent orchestration.
+
+===='''Applications:'''====
+*'''Smart Grids:''' Real-time monitoring and load balancing between local power sources and centralized control
+*'''Smart Agriculture:''' Local analysis of environmental data, with broader data analytics performed in the cloud
+*'''Healthcare Monitoring:''' Real-time patient monitoring at the edge, with historical analysis in the cloud
+
+By blending edge and cloud processing, the continuum provides a flexible infrastructure that adapts to real-time requirements while maintaining efficient long-term data management​.
+
+
+
+='''Machine Learning at the Edge'''=
+
+=='''4.1 Overview of ML at the Edge'''==
+==='''Introduction'''===
+Machine Learning is a branch of Artificial Intelligence that is primarily concerned with the training of algorithms to look at sets of data, analyze patterns, and generate conclusions so that the gathered data can be used to generate results and carry out tasks. As an application, machine learning is especially relevant when considering edge computing [7]. Given the recent prevalence and rise in the field of machine learning, it is inevitable that deployment of machine learning algorithms will play a crucial role in the function of edge computing systems as well. The abundant sensor networks often involved in edge systems provide a means of gathering very large amounts of data. With the help of machine learning, such data can be utilized in very effective ways and automation methods can be employed to improve efficiency. Machine learning on edge devices themselves can help ease the burden on cloud systems and the networks connected to them as well, especially if the model does need such large computational power such as in the case of certain Small Language Models (SLMs). However, the main issue regarding machine learning at the edge lies in the devices, which may have limited computational power, and the environment, which may change dynamically and be effected by network congestion, device outages, or other unexpected events. If these challenges can be overcome, edge systems could play a pivotal role in advancing machine learning and utilize it to maximize efficiency.
+
+
+==='''Benefits of Machine Learning using Edge Computing'''===
+'''Data Volumes:''' Traditional cloud computing architecture may not be able to keep up with the massive volume of data that is often generated by IoT devices and sensors, thus increasing costs as well as pressure and congestion on the networks transmitting data [5]. With edge computing architectures, machine learning can be deployed in a distributed nature, allowing ML models to be deployed and trained across many edge devices. The nature of edge devices sharing computational tasks makes it perfect for taking large datasets and splitting the computational load so that many devices can compute what a single device might not have been able to handle [5]. More than just splitting input data across edge devices, machine learning models can be split up across edge devices as well. This allows for deployment of models that would be otherwise too large to be deployed on a single edge device with limited memory. In such cases, edge nodes are able to collaboratively pass data between them, and the global ML model is later updated based on the workings of each smaller portion [5]. Additionally, the sheer amount of data that processed from edge devices means more training data for machine learning models, which generally increases accuracy, and thus edge computing could be an effective solution to providing lots of good and relevant data for a variety of applications. 
+
+'''Lower Latency:''' For certain real-time applications, such as Virtual and Augmented Reality(VR/AR) or smart cars, the latency required to transmit data and process it to the cloud may be too high to make these applications efficient and safe. A key benefit of edge computing lies in the reduced latency provided by putting devices closer to the users, and this is applicable to machine learning as well [5].
+
+'''Enhanced privacy:''' Processing data locally rather than on the cloud reduces the risk of data theft and enhances privacy. The data does not have to be sent to anyone else, or go over a network to potentially get compromised. This is crucial given the large amounts of data needed for machine learning, and especially if personal data is needed for a personal application, many users would prefer the privacy done by having it processed locally [5].
+
+==='''Challenges of Machine Learning Using Edge Computing'''===
+
+'''Potentially Low Computational Power:''' Many edge devices lack the computational power needed for deep learning applications, especially given the large amount of data and complex operations that may have to take place [1].
+
+'''Energy Management:''' Given that edge devices may consist of sensors, or other devices that are meant to have low energy consumption, the tasks associated with machine learning could quickly drain their power, even if they have sufficient power to run the workloads [6].
+
+'''New Attack Surfaces:''' With more devices comes the increased potential for malicious hackers to steal data or compromise devices, despite the enhanced privacy. Encryption, access controls, and other methodologies must be employed to mitigate the potential for new attack surfaces to be exploited [6].
+
+==='''Applications for ML at the Edge'''===
+The utilization of data to make conjectures about what is going on in the environment and how to respond has a variety of use cases that can greatly benefit people, cities, and the environment. By leveraging and monitoring a constant stream of data and training machine learning models to detect or even respond to different events, there can be many practical applications for such systems. These would rely on the combination of edge devices and machine learning to better enhance experience for users and detect events of interest.
+
+'''Self-Driving Cars''': Imitation learning can be leveraged to better understand and emulate human driving. The low latency that can be provided by edge computing is especially useful for the quick decision making needed by these systems [7].
+
+'''Smart Home Devices''': Understanding user habits by leveraging the available data for them can make smart homes more convenient for users. The increased privacy that can come with edge computing, along with a few extra cybersecurity measures, can ensure the personal data that may be used for training is not compromised.
+
+'''Environmental and Industrial Monitoring:''' Sensors deployed in environments and industrial settings could be trained to recognize when there are anomalies or undesirable behavior, thus ensuring a quick response and active information sending [7].
+
+'''Smart Cities:''' Similar to above, the data collected by sensors in cities can leverage machine learning to help in crime and emergency detection, traffic management, or energy management[7].
+
+=='''4.2 ML Training at the Edge'''==
+
+Machine Learning (ML) training at the edge is basically the process of developing, updating, or fine-tuning ML models directly on edge devices like on smartphones, IoT sensors, wearables, and other embedded systems instead of only depending on centralized cloud infrastructure. This approach is becoming a lot more important as the demand for real-time, personalized AI applications continues to grow. By being able to train models closer to where the data is generated, edge-based ML enables faster responses, helps reduce latency, and enhances user privacy by minimizing the need to transmit sensitive data to the cloud. It’s also especially useful in scenarios where devices operate in environments with limited or unreliable network connectivity, allowing them to function more efficiently.
+
+==='''Benefits:'''===
+One significant advantage of training ML models directly on edge devices is reduced latency. By processing data locally, devices can make immediate decisions without the delays caused by transmitting data back and forth to cloud servers. This immediate responsiveness is extremely important for applications like real time health monitoring, autonomous driving, and industrial automation.
+
+Additionally, training machine learning models at the edge significantly enhances user privacy. Since sensitive data can be processed and stored directly on the user's device rather than being sent to centralized cloud servers, the risk of data breaches or unauthorized access during transmission is reduced by a lot. This local data handling is able to prevent exposure of personal or confidential information, providing users greater control over their data. Edge-based training naturally aligns with privacy regulations such as the General Data Protection Regulation (GDPR), which emphasizes strict data security, transparency, and explicit user consent. By keeping personal data localized, edge training not only improves security but also helps organizations easily comply with privacy laws, protecting users’ rights and maintaining trust.
+
+Efficiency and resilience are important benefits of edge training. By training machine learning models directly on edge devices, these devices become capable of processing data locally without relying on constant internet connectivity. This local processing allows edge devices to continue operating effectively even in environments where network connections are weak, unstable, or completely unavailable. Because they are not fully dependent on cloud infrastructure, edge devices can quickly adapt to changes, respond in real-time, and update their ML models based on immediate local data. As a result, edge training ensures reliable performance and uninterrupted operation, making it particularly valuable for remote locations, emergency scenarios, and harsh environments where cloud-based solutions might fail or become unreliable.
+
+
+'''Examples: '''
+A smart thermostat in a home can learn a user’s preferences for temperature and adjust automatically based on real-time inputs, like time of day or weather conditions. Similarly, a fitness tracker can track user activity patterns and adapt its recommendations for workouts or rest periods based on how the user is performing each day. These devices don’t need to rely on cloud servers to update or personalize their behavior — they can do it instantly on the device, which makes them more responsive and efficient.
+
+In smart agriculture, edge computing is used to enhance crop monitoring and optimize farming practices. Devices like soil sensors, drones, and automated irrigation systems are equipped with sensors that collect data on soil moisture, temperature, and crop health. Edge devices process this data locally, enabling real-time decisions for tasks like irrigation, fertilization, and pest control.
+
+In smart retail, edge computing is used to improve inventory management and customer experience. Retailers use smart shelves, RFID tags, and in-store cameras equipped with sensors to track inventory and monitor customer behavior. By processing this data locally on edge devices, retailers can manage stock levels, detect theft, and optimize store layouts in real-time. RFID tags placed on products can detect when an item is removed from the shelf. Using edge processing, the system can immediately update the inventory count and trigger a restocking request if an item’s stock is low.
+
+
+'''Research Papers:'''
+An important contribution to the understanding of machine learning (ML) training at the edge is the research paper "Making Distributed Edge Machine Learning for Resource-Constrained Communities and Environments Smarter: Contexts and Challenges" by Truong et al. (2023). This paper focuses on training ML models directly on edge devices in communities and environments facing limitations, such as unstable network connections, limited computational resources, and scarce technical expertise. The authors emphasize the necessity of developing context-aware ML training methods specifically tailored to these environments. Traditional centralized ML training methods often fail to operate effectively in such constrained settings, highlighting the need for decentralized, localized solutions. Truong et al. explore various challenges, including managing data efficiently, deploying suitable software frameworks, and designing intelligent runtime strategies that allow edge devices to train models effectively despite limited resources. Their work points out significant research directions, advocating for more adaptable and sustainable ML training solutions that genuinely reflect the technological and social contexts of resource-limited environments.
+
+==='''Tools and Frameworks:'''===
+ 
+Frameworks like TensorFlow Lite, PyTorch Mobile, and Edge Impulse are designed to support edge-based model training and inference. These tools allow developers to build and fine-tune models specifically for deployment on low-power devices.
+
+==='''Technical Challenges:'''===
+
+Despite its advantages, ML training at the edge presents challenges, including limited processing power, memory constraints, and energy efficiency. Edge devices often lack the computational resources of cloud servers, requiring lightweight models, optimized algorithms, and energy-efficient hardware.
+
+Real World Applications: 
+A well known example is Apple’s use of on-device training for personalized voice recognition with Siri. Instead of uploading user voice data to the cloud, Apple uses local training to improve accuracy over time while maintaining user privacy.
+
+==='''Model Compression Techniques'''===
+Despite the challenges, of ML at the edge, there are a variety of methods that can be used to provide a more efficient means of training, and making the heavy workloads compatible with even the limited computing power of certain edge devices.
+
+'''Quantization:'''
+Quantization is a method that involves reducing the precision of numbers, and thus easing the burden of computational power as well as memory management on the edge devices. There are multiple forms of quantization, but each one essentially sacrifices some precision - enough so that accuracy is mostly maintained but the numbers are easier to handle. For example, converting from floating point to integer datatypes means significantly less memory is used, and the differences for some models in the precision may be negligible. Another example is K-means based Weight Quantization, which involves creating a matrix and grouping similar numbers together with centroids. An example is shown below:
+
+In recent work, Quantized Neural Networks (QNNs) have demonstrated that even extreme quantization—such as using just 1-bit values for weights and activations—can retain near state-of-the-art accuracy across vision and language tasks [12]. This type of quantization drastically reduces memory access requirements and replaces expensive arithmetic operations with fast, low-power bitwise operations like XNOR and popcount. These benefits are especially important for edge deployment, where energy efficiency is critical. In addition to model compression, Hubara et al. also show that quantized gradients—using as little as 6 bits—can be employed during training with minimal performance loss, further enabling efficient on-device learning [12]. QNNs have achieved strong results even on demanding benchmarks like ImageNet, while offering significant speedups and memory savings, making them one of the most practical solutions for edge AI deployment [12].
+
+
+'''Pruning:'''
+Pruning is an optimization technique that systematically removes low-salience parameters—such as weakly contributing weights or redundant hypothesis paths—from a machine learning model or decoding algorithm to reduce computational overhead. In the context of edge computing, where resources like memory bandwidth, power, and processing time are limited, pruning enables the deployment of performant models within strict efficiency constraints.
+
+In statistical machine translation (SMT) systems, pruning is particularly critical during the decoding phase, where the search space of possible translations grows exponentially with sentence length. Techniques such as histogram pruning and threshold pruning are employed to manage this complexity. Histogram pruning restricts the number of candidate hypotheses retained in a decoding stack to a fixed size 𝑛, discarding the remainder. Threshold pruning eliminates hypotheses whose scores fall below a proportion 𝛼 of the best-scoring candidate, effectively filtering out weak candidates early.
+
+The paper by Banik et al. introduces a machine learning-based dynamic pruning framework that adaptively tunes pruning parameters—namely stack size and beam threshold—based on structural features of the input text, such as sentence length, syntactic complexity, and the distribution of stop words. Rather than relying on static hyperparameters, this method uses a classifier (CN2 algorithm) trained on performance data to predict optimal pruning configurations at runtime. Experimental results showed consistent reductions in decoding latency (up to 90%) while maintaining or improving translation quality, as measured by BLEU scores [13].
+
+This adaptive pruning paradigm is highly relevant to edge inference pipelines, where models must maintain a balance between latency and predictive accuracy. By intelligently limiting the hypothesis space and focusing computational resources on high-probability paths, pruning supports real-time, resource-efficient processing in edge NLP and embedded translation systems.
+
+'''Distillation:'''
+Distillation is a key strategy for reducing model complexity in edge computing environments. Instead of training a compact student model on hard labels—discrete class labels like 0, 1, or 2—it is trained on the soft outputs of a larger teacher model. These soft labels represent probability distributions over all classes, offering more nuanced supervision. For instance, rather than telling the student the input belongs strictly to class 3, a teacher might output “70% class 3, 25% class 2, 5% class 1.” This richer feedback helps the student model capture subtle relationships between classes that hard labels miss. Beyond reducing computational demands, distillation enhances generalization by conveying more informative training signals. It also benefits from favorable data geometry—when class distributions are well-separated and aligned—and exhibits strong monotonicity, meaning the student model reliably improves as more data becomes available [11]. These properties make it exceptionally suited for edge devices where training data may be limited, but efficient inference is crucial. 
+
+In most cases, knowledge distillation in edge environments involves a large, high-capacity model trained in the cloud acting as the teacher, while the smaller, lightweight student model is deployed on edge devices. A less common—but emerging—practice is edge-to-edge distillation, where a more powerful edge node or edge server functions as the teacher for other nearby edge devices. This setup is especially valuable in federated, collaborative, or hierarchical edge networks, where cloud connectivity may be limited or privacy concerns necessitate local training. Distillation can also be combined with techniques such as quantization or pruning to further optimize model performance under hardware constraints. An example is shown below:
+
+==='''Usage and Applications of AI Agents'''===
+As artificial intelligence and machine learning technologies continue to mature, they pave the way for the development of intelligent AI agents capable of autonomous, context-aware behavior, with the goal of efficiently performing tasks specified by users. These agents combine perception, reasoning, and decision-making to execute tasks with minimal human intervention. When deployed on edge devices, AI agents can operate with low latency, preserve user privacy, and adapt to local data—making them ideal for real-time, personalized applications in homes, vehicles, factories, and beyond.
+
+To function effectively, an agent must first perceive its environment and understand the task—often defined by the user. Then, it must reason about the optimal steps to accomplish that task, and finally, it must act on those decisions. These three components—perception, reasoning, and action—are essential to the agent’s ability to operate accurately and autonomously in dynamic environments.
+
+'''Reasoning:''' The agent must be able to think sequentially, and decompose its specified tasks into a sequence of specific steps in order to accomplish its goal. It must also have some memory storage in order to remember what it has done, as well as the results of its sequence of actions in order to learn for future steps.
+
+'''Autonomy:''' The agent must choose from the availability of possible steps, and operate based on its reasoning without step-by-step instructions from the user.
+
+'''Tools:''' These tasks, however, are impossible to accomplish without the correct tools. Even if an AI agent understands how to go about carrying a task for optimal results, it must have the actual means to do it. This can include the ability to use and interact with APIs, interpret code, and access certain databases. 
+
+Utilizing AI agents on edge devices can be tricky due to the computational and reasoning power needed. However, there are methods to accomplish this such as SLMs which query LLMs as needed (discussed later), or utilizing more powerful edge devices to carry out tasks. However, utilizing edge devices can be paramount if latency is a major issue, or if the agent is exposed to sensitive user data. Additionally, by using edge devices specific to a user, it may be able to better learn a user's patterns and preferences and react accordingly to provide the best possible outcome for that user.
+
+=='''4.3 ML Model Optimization at the Edge'''==
+
+==='''The Need for Model Optimization at the Edge'''===
+Given the constrained resources and the inherently dynamic environments in which edge devices must operate, model optimization is a crucial part of machine learning in edge computing. The current most widely used methodology consists of simply specifying an exceptionally large set of parameters, and giving it to the model to train on. This can be feasible when hardware is very advanced and powerful, and is necessary for systems such as Large Language Models (LLMs). However, this is no longer viable when dealing with the devices and environments at the edge. It is crucial to identify the best parameters and training methodology so as to minimize the amount of work done by these devices, while compromising as little as possible on the accuracy of the models. There are multiple ways to this, and they include either optimization or augmentation of the dataset itself, or optimization of the partition of work among the edge devices.
+
+==='''Edge and Cloud Collaboration'''===
+One methodology that is often used involves collaboration between both Edge and Cloud Devices. The cloud has the ability to process workloads that may require much more resources and cannot be done on edge devices. On the other hand, edge devices, which can store and process data locally, may have lower latency and more privacy. Given the advantages of each of these, many have proposed that the best way to handle machine learning is through a combination of edge and cloud computing. 
+
+The primary issue facing this computing paradigm, however, is the problem of optimally selecting which workloads should be done on the cloud and which should be done on the edge. This is a crucial problem to solve, as the correct partition of workloads is the best way to ensure that the respective benefits of the devices can be leveraged. A common way to do this, is to run certain computing tasks on the necessary devices and determine the length of time and resources that it takes. An example of this is the profiling step done in [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10818760&tag=1 EdgeShard] [1] and [https://dl.acm.org/doi/pdf/10.1145/3093337.3037698 Neurosurgeon] [4]. Other frameworks implement similar steps, where the capabilities of different devices are tested in order to allocate their workloads and determine the limit at which they can provide efficient functionality. If the workload is beyond the limits of the devices, it can be sent to the cloud for processing
+
+The key advantage of this is that it is able to utilize the resources of the edge devices as necessary, allowing increased data privacy and lower latency. Since workloads are only processed in the cloud as needed, this will reduce the overall amount of time needed for processing because data is not constantly sent back and forth. It also allows for much less network congestion, which is crucial for many applications.
+
+
+==='''Optimizing Workload Partitioning'''===
+The key idea for much of the optimization done in machine learning on edge systems involves fully utilizing the heterogenous devices that are often contained in these systems. As such, it is important to understand the capabilities of each device so as to fully utilize its advantages. Devices can very greatly from smartphones with more powerful computational abilities to raspberry pis to sensors. More difficult tasks are offloaded to the powerful devices, while simpler tasks, or models that have been somewhat pretrained can be sent to the smaller devices. In some cases, as in [https://ieeexplore.ieee.org/abstract/document/8690980 Mobile-Edge] [2], the task may be dropped altogether if the resources are deemed insufficient. In this way, exceptionally difficult tasks do not block tasks that have the ability to be executed and therefore the system can continue working. 
+
+==='''Dynamic Models'''===
+Given the dynamic nature of the environments that edge devices must function, as well as the heterogeneity of the devices themselves, a dynamic model of machine learning is often employed. Such models must keep track of the current available resources including computation usage and power, as well as network traffic. These may change very often depending on the workloads and devices in the system. As such, training models to continuously monitor and dynamically distribute the workloads is a very important part of optimization. Simply offloading larger tasks to more powerful devices may be obsolete if the devices has all of  its computing resources or network capabilities being used up by another workload. 
+
+The way this is commonly done is by using the profiling step described above as a baseline. Then, a machine learning model utilizes the data to estimate the performance of devices and/or layers. During runtime, a similar process is employed which may update the data used and help the model refine its predictions. Network traffic is also taken into account at this stage in order to preserve the edge computing benefit of providing lower latency. Using all of this data and updates at runtime, the partitioning model is able to dynamically distribute workloads at runtime in order to optimize the workflow and ensure each device is utilizing its resources in the most efficient manner. Two very good examples of how such a system is specifically deployed are the Neurosurgeon and EdgeShard systems, shown above.
+
+==='''Horizontal and Vertical Partitioning'''===
+There are 2 major ways that these models split the workloads in order to optimize the machine learning: Horizontal and vertical partitioning [3]. Given a set of layers that ranges from the cloud to edge, vertical partitioning involves splitting up the workload between the layers. For example, if a large amount of computational resources is deemed necessary, this task may go to the cloud to be completed and preprocessed. One the other hand, if a small amount of computational power is required, this type of work can go to edge devices. Such partitioning also depends on the confidence and accuracy level of the given learning. If the accuracy is completed on an edge device and found to be very low, it can be sent to the cloud; on the other hand if the accuracy is already fairly high and the learning model needs smaller work to reach the threshold deemed acceptable, it may be sent to edge devices to free up network traffic on the cloud and reduce latency [3].
+
+The second model of partitioning is called horizontal partitioning. This involves splitting among the devices within a certain layer rather than among the layers themselves. This is similar to what has been described in previous sections, as it allows a means for fully utilizing the heterogenous abilities that are found in edge devices. Similar functionality and determination to what is found in horizontal partitioning is done, but all of the devices that the workload is split across function on the same layer [3]. To fully optimize a machine learning model, both horizontal and vertical partitioning must be used. 
+
+
+
+==='''Distributed Learning'''===
+Distributed learning is a process in which instead of giving all of the data to the nodes, each node takes in and processes only a subset of the overall data, then sends its results to a central server which contains the main model. These periodic updates are done by each node, and by only processing part of the data, it is much more easy for edge devices to handle these workloads. It can also reduce the time and computational burden on the cloud and network because it is not only the central server performing all of the computations. One popular method of accomplishing this  is by using parallel gradient descent. Gradient descent by itself is a very useful means of training a model, and parallel gradient descent uses a similar process but instead of a single operation, it aggregates the gradient descent calculated by each node in order to update the central model. This efficiently utilizes each node and makes sure that the data that is used to update the model does not exceed the memory constraints of the edge devices being used as nodes.
+
+
+'''Asynchronous Scheduling:''' One important aspect of distributed learning is the means by which the updates are given to the model. Each node may have different amounts of data, memory, and computational power, and therefore the time it takes to process and update will not be the same. Synchronous algorithms make sure that each node finishes its respective processing, and then all of the calculations from all nodes are sent to update the central model. Although, this can make the updating easier, any nodes that lag behind the others will greatly reduce the speed at which the model is trained; this also leaves nodes idle while others are still processing and can be highly inefficient. To optimize this, after each node has finished its respective processing, it sends everything to the main server for an update rather than waiting for all the others to finish. However, this requires some more communication, as after each update, every node must get the updated model for the central server; this can be challenging to repeatedly do, but the efficiency that is gained is often worth it.
+
+'''Federated learning:''' Federated learning is another means by which the data as well as computational burden is distributed among a set of nodes, thus reducing network traffic and strain on the central servers. It is similar to distributed learning, but the key difference lies in the data partitioning. Unlike distributed learning, data used in federated learning is not shared with the central servers. Instead, only local data from each of the nodes is used to train the model. Then, the only part shared with the central model is the updated parameters. A key aspect of this is that federated learning provides a greater amount of data privacy, which is crucial for certain applications dealing with sensitive data. Therefore, it is especially useful to utilize edge devices to perform federated learning. Federated learning is discussed in detail in chapter 5 of this wiki.
+
+==='''Transfer Learning'''===
+Transfer learning is a method of machine learning in which a pretrained model is sent to the different nodes for further processing and fine-tuning. The initial training of the model may involve a very large amount of data and could place a major burden on the device that must execute it, which may not be feasible for edge devices. Therefore, the bulk of the model training is done by a more powerful machine, such as the cloud, and then the pretrained model is sent to the edge device. This can be useful, as it reduces the computational burden on the edge device, and allows it to fine-tune the model using the data it collects without having to completely train the whole system. One form of this is knowledge distillation, in which a smaller model can be trained to mimic that of a larger model. This may often be the case when edge and cloud systems are used in a combined way.
+
+==='''Methods of Data Optimization'''===
+
+'''Data Selection:''' Certain types of data may be more useful than others, and therefore the ones that most affect the accuracy of a model can be offloaded to edge devices. This decreases the workload on them because less data must be processed, while also conserving the accuracy of the model as much as possible. Some larger data may not be needed, such as only putting Small Language Models on edge devices that can handle simple commands and prompts, rather than having to offload an entire LLM onto the device, which may overload its computational abilities and not provide enough use.
+
+'''Data Compression:''' Data can be compressed to a smaller form in order to fit the constraints of edge devices. This is especially true given their limited memory, and also makes the workload smaller. Quantization, discussed previously, is a prevalent example of this.
+
+'''Container Workloads:''' Container workloads can be very useful, as they provide all resources and important data the device needs for processing the work. By examining the computational abilities of the device, different sized workloads can be allocated as deemed necessary to maximize the efficiency of the training.
+
+'''Batch size tuning:''' The batch size used by a certain model is very important when considering the memory constraints of edge devices. Batch sizes that are smaller allow for a quicker and more efficient means of training models, and are less likely to lead to bottlenecks in memory. This is related to partitioning because the computing and memory capacity of the devices available are very important factors to consider.
+
+==='''Utilizing Small Language Models (SLMs)'''===
+Large Language Models (LLMs) have become a prevalent system recently and are able to do and help with a variety of tasks. However, running and training an LLM requires a significant amount of computational resources which is not feasible when working with edge devices. Most modern LLMs are cloud based, but this may lead to high latency and increased network traffic, especially when working with a large subsystem of nodes. 
+
+One way that a similar system can be achieved on edge devices is by using SLMs. These are not as accurate and do not have the vast knowledge of LLMs or the amount of data they are trained on, but for the purposes of basic applications and edge devices, they can be sufficient to accomplish many tasks. They are also often fine-tuned and trained to accomplish the specific tasks which they are deployed for and are much faster and resource-efficient than LLMs. They can also provide much more privacy because they are able to be run on local devices without sharing user data to the cloud. This can be useful for a wide variety of edge applications. If needed and privacy constraints permit, they can query and LLM as needed for more complicated tasks. This means that not every prompt leads to a query, and thus network traffic, privacy, and latency constraints are still preserved.
+
+==='''Synthesis'''===
+
+In summary, edge-oriented machine learning optimization requires an integrated approach that combines model-level compression with system-level orchestration. Techniques such as quantization, structured and unstructured pruning, and knowledge distillation reduce the computational footprint and memory requirements of deep learning models, enabling deployment on resource-constrained devices without substantial loss in inference accuracy. Concurrently, dynamic workload partitioning, heterogeneity-aware scheduling, and adaptive runtime profiling allow the system to allocate tasks across edge and cloud tiers based on real-time availability of compute, bandwidth, and energy resources. This joint optimization across model architecture and execution environment is essential to meet the latency, privacy, and resilience demands of edge AI deployments.
+
+=='''References'''==
+[https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10818760&tag=1 1. M. Zhang, X. Shen, J. Cao, Z. Cui and S. Jiang, "EdgeShard: Efficient LLM Inference via Collaborative Edge Computing," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2024.3524255]
+
+[https://ieeexplore.ieee.org/abstract/document/8690980 2. X. Chen, H. Zhang, C. Wu, S. Mao, Y. Ji and M. Bennis, "Performance Optimization in Mobile-Edge Computing via Deep Reinforcement Learning," 2018 IEEE 88th Vehicular Technology Conference (VTC-Fall), Chicago, IL, USA, 2018, pp. 1-6, doi: 10.1109/VTCFall.2018.8690980.]
+
+[https://ieeexplore.ieee.org/abstract/document/8976180 3. X. Wang, Y. Han, V. C. M. Leung, D. Niyato, X. Yan and X. Chen, "Convergence of Edge Computing and Deep Learning: A Comprehensive Survey," in IEEE Communications Surveys & Tutorials, vol. 22, no. 2, pp. 869-904, Secondquarter 2020, doi: 10.1109/COMST.2020.2970550.]
+
+[https://dl.acm.org/doi/abs/10.1145/3093337.3037698 4. Kang, Yiping and Hauswald, Johann and Gao, Cao and Rovinski, Austin and Mudge, Trevor and Mars, Jason and Tang, Lingjia, "Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge" 2017 Association for Computing Machinery, New York, NY, USA, 2017, doi: 10.1145/3093337.3037698.]
+
+[https://dl.acm.org/doi/pdf/10.1145/3555802 5. H. Hua, Y. Li, T. Wang, N. Dong, W. Li, and J. Cao, "Edge computing with artificial intelligence: A machine learning perspective," ACM Computing Surveys, vol. 55, no. 9, Art. no. 184, pp. 1–35, Jan. 2023, doi: 10.1145/3555802..]
+
+[https://www.mdpi.com/2079-9292/13/3/640 6. Grzesik, Piotr, and Dariusz Mrozek. "Combining machine learning and edge computing: Opportunities, challenges, platforms, frameworks, and use cases." Electronics 13.3 (2024): 640.]
+
+[https://link.springer.com/chapter/10.1007/978-3-030-96756-7_1#citeas 7. S. Rafatirad, H. Homayoun, Z. Chen, and S. M. Pudukotai Dinakarrao, "What Is Applied Machine Learning?," in Machine Learning for Computer Scientists and Data Analysts, Cham, Switzerland: Springer, 2022.]
+
+[https://link.springer.com/article/10.1007/s13748-012-0035-5 8. Peteiro-Barral, Diego, and Bertha Guijarro-Berdiñas. "A survey of methods for distributed machine learning." Progress in Artificial Intelligence 2 (2013): 1-11.]
+
+[https://proceedings.neurips.cc/paper/2010/hash/abea47ba24142ed16b7d8fbf2c740e0d-Abstract.html 9. Zinkevich, Martin, et al. "Parallelized stochastic gradient descent." Advances in neural information processing systems 23 (2010).]
+
+[https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9134370 10. F. Zhuang et al., "A Comprehensive Survey on Transfer Learning," in Proceedings of the IEEE, vol. 109, no. 1, pp. 43-76, Jan. 2021, doi: 10.1109/JPROC.2020.3004555]
+
+[https://proceedings.mlr.press/v97/phuong19a/phuong19a.pdf 11. M. Phuong and C. Lampert, "Towards understanding knowledge distillation," in Proc. Int. Conf. Mach. Learn., May 2019, pp. 5142–5151.]
+
+[https://www.jmlr.org/papers/volume18/16-456/16-456.pdf 12. I. Hubara, M. Courbariaux, D. Soudry, R. El-Yaniv, and Y. Bengio, "Quantized neural networks: Training neural networks with low precision weights and activations," Journal of Machine Learning Research, vol. 18, no. 187, pp. 1–30, 2018.]]
+
+[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8588318 13. D. Banik, A. Ekbal, and P. Bhattacharyya, "Machine learning based optimized pruning approach for decoding in statistical machine translation," IEEE Access, vol. 7, pp. 1736–1751, Dec. 2018, doi: 10.1109/ACCESS.2018.2883738.]
+
+# [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7488250&isnumber=7563473 W. Shi, J. Cao, Q. Zhang, Y. Li and L. Xu, "Edge Computing: Vision and Challenges," in IEEE Internet of Things Journal, vol. 3, no. 5, pp. 637-646, Oct. 2016, doi: 10.1109/JIOT.2016.2579198]
+# [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9083958&isnumber=8948470 ,K. Cao, Y. Liu, G. Meng and Q. Sun, "An Overview on Edge Computing Research," in IEEE Access, vol. 8, pp. 85714-85728, 2020, doi: 10.1109/ACCESS.2020.2991734]
+# [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8123913&isnumber=8274985 W. Yu et al., "A Survey on the Edge Computing for the Internet of Things," in IEEE Access, vol. 6, pp. 6900-6919, 2018, doi: 10.1109/ACCESS.2017.2778504]
+# Wang, Shufen. (2019). Edge Computing: Applications, State-of-the-Art and Challenges. Advances in Networks. 7. 8. 10.11648/j.net.20190701.12
+# [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9445331&isnumber=9445272 G. Kaur and R. S. Batth, "Edge Computing: Classification, Applications, and Challenges," 2021 2nd International Conference on Intelligent Engineering and Management (ICIEM), London, United Kingdom, 2021, pp. 254-259, doi: 10.1109/ICIEM51511.2021.9445331]
+# [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9863881&isnumber=9955314 X. Kong, Y. Wu, H. Wang and F. Xia, "Edge Computing for Internet of Everything: A Survey," in IEEE Internet of Things Journal, vol. 9, no. 23, pp. 23472-23485, 1 Dec.1, 2022, doi: 10.1109/JIOT.2022.3200431.]
+# https://aws.amazon.com/what-is/edge-computing/
+# https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-edge-computing
